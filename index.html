@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azam Azis Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+      <div class="container">
+        <p class="navbar-brand d-flex align-items-center" href="#">
+          <img src="Boy.jpeg" alt="Logo">
+          A<sub>2</sub>Ai5
+        </p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#servicesModal">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonial">Testimonial</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wa.me/message/QULJQWOYLRZQD1" target="_blank">Contact</a></li>
+            <li class="nav-item ms-2">
+              <a class="btn btn-download" href="cv.pdf" download>Download CV</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 mb-4 mb-lg-0">
+            <div class="mb-2 greeting"><strong>Hi I am</strong></div>
+            <h1 class="name">Azam Azis</h1>
+            <h2 class="job"><strong>WEB DEVELOPER</strong></h2>
+            <p class="mt-3 mb-4">I build modern websites with clean code and carefully considered design. I aim to create websites that look great and run smoothly.</p>
+            <a href="https://github.com/willcloudA2" target="_blank" class="btn btn-download">Visit My GitHub</a>
+          </div>
+          <div class="col-lg-5 text-center">
+            <img src="Boy.jpeg" alt="Profile" class="profile-img mb-3">
+            <div>
+              <a href="https://www.linkedin.com/in/azam-azis-489843326/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="section-title text-center">About Me</div>
+        <div class="section-subtitle text-center">Passionate web developer with a focus on creating impactful digital experiences.</div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-4 mb-4">
+            <div class="info-item"><span class="info-icon"><i class="fas fa-user"></i></span> <strong>Full Name</strong><br>Azam Azis</div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="info-item"><span class="info-icon"><i class="fas fa-graduation-cap"></i></span> <strong>Education</strong><br>S-1 Pendidikan Kimia</div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="info-item"><span class="info-icon"><i class="fas fa-briefcase"></i></span> <strong>Language</strong><br>Indonesia and English</div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="info-item"><span class="info-icon"><i class="fas fa-envelope"></i></span> <strong>Contact</strong><br>aziz76218@gmail.com</div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="info-item"><span class="info-icon"><i class="fas fa-heart"></i></span> <strong>Hobby</strong><br>Coding dan Drawing</div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="info-item"><span class="info-icon"><i class="fas fa-map-marker-alt"></i></span> <strong>Address</strong><br>Yogyakarta</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+      <div class="container">
+        <div class="section-title text-center">My Projects</div>
+        <div class="section-subtitle text-center">Explore some of my featured works across web, app, and graphic design.</div>
+        <div class="text-center mb-4">
+          <button type="button" class="filter-btn active" data-filter="all">All</button>
+          <button type="button" class="filter-btn" data-filter="uiux">UI/UX</button>
+          <button type="button" class="filter-btn" data-filter="web">Web Design</button>
+          <button type="button" class="filter-btn" data-filter="app">App Design</button>
+          <button type="button" class="filter-btn" data-filter="graphic">Graphic Design</button>
+        </div>
+        <div class="row" id="project-list">
+          <!-- Project cards will be injected here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Modal -->
+    <div class="modal fade" id="servicesModal" tabindex="-1" aria-labelledby="servicesModalLabel">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="servicesModalLabel">My Services</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <strong>Web Development</strong><br>
+                Building responsive and scalable websites tailored to your business needs.
+              </li>
+              <li class="list-group-item">
+                <strong>UI/UX Design</strong><br>
+                Designing intuitive and engaging user interfaces for web and mobile apps.
+              </li>
+              <li class="list-group-item">
+                <strong>App Development</strong><br>
+                Creating modern mobile and web applications with seamless user experience.
+              </li>
+              <li class="list-group-item">
+                <strong>Graphic Design</strong><br>
+                Crafting visual assets and branding materials to elevate your business identity.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS & Custom Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Project data
+      const projects = {
+        uiux: [
+          { title: 'AIClantic Landing Page Design', img: 'Boy.jpeg', link: '#' },
+          { title: 'Business Dashboard UI', img: 'Boy.jpeg', link: '#' },
+          { title: 'Mobile App UI Kit', img: 'Boy.jpeg', link: '#' }
+        ],
+        web: [
+          { title: 'Business Landing Page Design', img: 'Boy.jpeg', link: '#' },
+          { title: 'Portfolio Website', img: 'Boy.jpeg', link: '#' },
+          { title: 'Ecom Web Page Design', img: 'Boy.jpeg', link: '#' }
+        ],
+        app: [
+          { title: 'Task Manager App', img: 'Boy.jpeg', link: '#' },
+          { title: 'Fitness Tracker App', img: 'Boy.jpeg', link: '#' },
+          { title: 'Recipe App', img: 'Boy.jpeg', link: '#' }
+        ],
+        graphic: [
+          { title: 'Brand Logo Design', img: 'Boy.jpeg', link: '#' },
+          { title: 'Business Card Design', img: 'Boy.jpeg', link: '#' },
+          { title: 'Social Media Banner', img: 'Boy.jpeg', link: '#' }
+        ]
+      };
+
+      function fadeOutProjects(callback) {
+        const cards = document.querySelectorAll('.project-card');
+        let finished = 0;
+        if (cards.length === 0) return callback();
+        cards.forEach(card => {
+          card.classList.remove('fade-in');
+          card.classList.add('fade-out');
+          card.addEventListener('transitionend', function handler() {
+            card.removeEventListener('transitionend', handler);
+            finished++;
+            if (finished === cards.length) callback();
+          });
+        });
+      }
+
+      function renderProjects(filter) {
+        const list = document.getElementById('project-list');
+        let items = [];
+        if (filter === 'all') {
+          Object.values(projects).forEach(arr => items.push(...arr));
+        } else {
+          items = projects[filter] || [];
+        }
+        list.innerHTML = '';
+        items.forEach((p, i) => {
+          const col = document.createElement('div');
+          col.className = 'col-12 col-sm-6 col-md-4 d-flex';
+          col.style.padding = '0 12px';
+          const card = document.createElement('button');
+          card.className = 'project-card fade-out w-100';
+          card.type = 'button';
+          card.setAttribute('tabindex', '0');
+          card.innerHTML = `
+            <img src="${p.img}" alt="${p.title}" class="project-img">
+            <div class="p-3 text-center" style="flex:1;display:flex;flex-direction:column;justify-content:center;">
+              <h5 class="mb-2">${p.title}</h5>
+            </div>
+          `;
+          card.onclick = () => window.open(p.link, '_blank');
+          card.onmouseover = () => card.classList.add('hovered');
+          card.onmouseout = () => card.classList.remove('hovered');
+          col.appendChild(card);
+          list.appendChild(col);
+          // Fade in animation staggered
+          setTimeout(() => {
+            card.classList.remove('fade-out');
+            card.classList.add('fade-in');
+          }, 100 + i * 120);
+        });
+      }
+
+      // Initial render
+      window.addEventListener('DOMContentLoaded', () => {
+        renderProjects('all');
+      });
+
+      // Filter buttons
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          fadeOutProjects(() => {
+            renderProjects(this.getAttribute('data-filter'));
+          });
+        });
+      });
+    </script>
+</body>
+</html>
